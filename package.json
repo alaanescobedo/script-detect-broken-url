@@ -1,0 +1,16 @@
+{
+  "name": "detect-broken-urls",
+  "version": "0.0.1",
+  "description": "Script to detect if a link is broken",
+  "main": "index.js",
+  "type": "module",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "test": "node test.ts",
+    "start": "node index.js"
+  },
+  "author": "Alan Escobedo <alanescobedo.dev@gmail.com>",
+  "license": "MIT"
+}
