@@ -22,8 +22,8 @@ export async function getBrokenUrls(urlList) {
     return brokenUrls.filter(url => url !== undefined)
 }
 
-// The key is 4 to separate the repository of TheAlgorithms / Algorithms-Explanation by programming language
-export function sortUrlsToJSON({ urls, indexKey = 4 }) {
+// The index is to separate the json by the part of the url you want
+export function sortUrlsToJSON({ urls, indexKey = 1 }) {
     return urls.reduce((acc, url) => {
         const key = url.split('/')[indexKey]
         acc[key] = [...acc[key] || [], url]
